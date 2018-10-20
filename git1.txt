@@ -1,0 +1,27 @@
+---- git 使用-----
+linux 环境：
+1.sudo apt-get install git
+2.git config --global user.name "username"
+  git config --global user.email "XXXX@XX.com"
+3.ssh-keygen -t rsa -C "XXXXX@qq.com"
+4.查看用户目录下是否有
+id_rsa    id_rsa.pub   known_hosts
+git添加id_rsa.pub
+ 参考 ： https://www.baidu.com/link?url=vrCfcYOm0Bp-sFYRfmWLm5yZ3QMeM0LgF6sCQpSJf8mq08JLylHz2f8DcBfeNoDM33uSU10zf1IKumfGXoJXW9u1WO-xypQr6YGWK3uLK0G&wd=&eqid=92af298c00052e19000000035bcb0c87
+
+5.Create a new repository
+
+6.复制 ssh地址
+7.linux 环境执行
+  mkdir mygit
+  cd mygit
+  git init
+  git clone ssh地址
+  cd repositoryName
+  将代码上传到这个目录
+  git status
+  git add //选择要上传的文件路径
+  git commit -m "" //引号里写的是备注信息
+  git push  //提交到远程git仓库里
+
+  //去git页面看效果
